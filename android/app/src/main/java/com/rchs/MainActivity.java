@@ -1,4 +1,4 @@
-package com.mobilecesidevinfo19;
+package com.rchs.mobilecesidevinfo19;
 
 import com.facebook.react.ReactActivity;
 
