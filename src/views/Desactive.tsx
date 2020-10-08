@@ -8,12 +8,11 @@ interface LoginProps {
   login: () => void;
 }
 
-export default class Login extends React.Component<LoginProps> {
+export default class Desactive extends React.Component<LoginProps> {
   render() {
     return (
       <>
-        <Text>Login</Text>
-        <Button title={'login'} onPress={this.props.login} />
+        <Button title={'Desactivé'} onPress={this.props.login} />
       </>
     );
   }

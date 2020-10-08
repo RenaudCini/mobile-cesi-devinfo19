@@ -1,13 +1,15 @@
 import React from 'react';
 import {Text, StyleSheet, View} from 'react-native';
-import Home from './src/views/Home';
-import Login from './src/views/Login';
+import Active from './src/views/Active';
+import Pub from './src/views/Pub';
+import Desactive from './src/views/Desactive';
 import {AsyncStorage} from 'react-native';
 
 class App extends React.Component {
   state = {
-    hasUser: false,
-  };
+    hasUser: true,
+
+};
 
   async componentDiMount() {
     const hasUser = JSON.parse(
@@ -17,6 +19,7 @@ class App extends React.Component {
   }
 
   login = () => {
+    console.log();
     AsyncStorage.setItem('@hasUser', String(true));
     this.setState({hasUser: true});
   };
@@ -38,8 +41,9 @@ class App extends React.Component {
     }
     return (
       <View style={styles.container}>
-        {hasUser && <Home logout={this.logout} />}
-        {!hasUser && <Login login={this.login} />}
+        {hasUser && <Active logout={this.logout} />}
+        {!hasUser && <Pub/>}
+        {!hasUser && <Desactive login={this.login} />}
       </View>
     );
   }
