@@ -13,7 +13,7 @@ export default class Home extends React.Component<LogoutProps> {
     return (
       <>
         <Text>Bienvenu</Text>
-        <Button title={R.i18n.t('logout')} onPress={this.props.logout} />
+        <Button title={'Connecter'} onPress={this.props.logout} />
       </>
     );
   }

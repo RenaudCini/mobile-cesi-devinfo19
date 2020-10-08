@@ -13,7 +13,7 @@ export default class Login extends React.Component<LoginProps> {
     return (
       <>
         <Text>Login</Text>
-        <Button title={R.i18n.t('login')} onPress={this.props.login} />
+        <Button title={'login'} onPress={this.props.login} />
       </>
     );
   }

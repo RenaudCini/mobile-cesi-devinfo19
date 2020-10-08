@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "633604820831",
+    "firebase_url": "https://mobilecesidevinfo19.firebaseio.com",
+    "project_id": "mobilecesidevinfo19",
+    "storage_bucket": "mobilecesidevinfo19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633604820831:android:fb15e5a58d6e89fa64b0ea",
+        "android_client_info": {
+          "package_name": "com.rchs.mobilecesidevinfo19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633604820831-lnsq5foj04aeoom6laq3dkhvavb4brqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSikAdNWiXBQ7rz_bQE2gpz31sM9uMiRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633604820831-lnsq5foj04aeoom6laq3dkhvavb4brqd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

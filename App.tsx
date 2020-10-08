@@ -1,10 +1,8 @@
 import React from 'react';
 import {Text, StyleSheet, View} from 'react-native';
-
+import Home from './src/views/Home';
+import Login from './src/views/Login';
 import {AsyncStorage} from 'react-native';
-import Inputs from './src/components/input';
-import Routes from './src/components/routes'
-
 
 class App extends React.Component {
   state = {
@@ -28,11 +26,7 @@ class App extends React.Component {
     this.setState({hasUser: false});
   };
 
-
   render() {
-    return (<Routes />)
-  }
-  /*render() {
     const {hasUser} = this.state;
 
     if (hasUser === null) {
@@ -42,15 +36,14 @@ class App extends React.Component {
         </View>
       );
     }
-    return <Inputs />;
-  }*/
-}
-/* return (
+    return (
       <View style={styles.container}>
-        {hasUser && <Inputs/>}
+        {hasUser && <Home logout={this.logout} />}
         {!hasUser && <Login login={this.login} />}
       </View>
-    );*/
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   titleText: {
