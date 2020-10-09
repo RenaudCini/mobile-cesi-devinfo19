@@ -1,4 +1,4 @@
 export default {
-  gold: '#FD8000',
+  blue: 'rgb(30,144,255)',
 };
 

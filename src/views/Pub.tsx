@@ -18,4 +18,4 @@ export default class Pub extends React.Component {
     );
   }
 }
-export default Pub;
+

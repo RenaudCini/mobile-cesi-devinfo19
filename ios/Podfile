@@ -8,6 +8,8 @@ target 'mobileCesiDevinfo19' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'mobileCesiDevinfo19Tests' do
     inherit! :complete
     # Pods for testing
