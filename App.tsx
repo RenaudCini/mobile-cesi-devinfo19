@@ -4,7 +4,8 @@ import ButtonBannerAd from './src/views/ButtonBannerAd';
 import Pub from './src/views/Pub';
 import Interstitial from './src/views/Interstitial';
 import DesactiveBannerAd from './src/views/DesactiveBannerAd';
-import {AsyncStorage } from 'react-native';
+import {AsyncStorage} from 'react-native';
+import Reward from './src/views/Reward';
 
 class App extends React.Component {
   state = {
@@ -44,6 +45,7 @@ class App extends React.Component {
         {!hasUser && <Pub />}
         {!hasUser && <DesactiveBannerAd login={this.login} />}
         {<Interstitial />}
+        {<Reward />}
       </View>
     );
   }
